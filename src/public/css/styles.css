@@ -103,6 +103,11 @@ body {
     font-size: 1.1rem;
 }
 
+.submenu li a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
 .menu li:hover .submenu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -118,7 +123,8 @@ body {
     background: linear-gradient(90deg, rgb(37, 37, 228), rgb(135, 4, 161), rgb(187, 40, 216), rgb(236, 110, 198));
     padding: 2px 15px;
     font-size: 1.2rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Basic', sans-serif;
+    font-weight: bold;
     border-radius: 2px;
 }
 
@@ -126,6 +132,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px 15px;
+}
+.elements-items a:hover {
+    transition: 0.2s;
+    opacity: 0.5;
 }
 
 .elements-items img {
@@ -146,4 +156,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* ERROR */
+.no-exists {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.no-exists img {
+    width: 400px;
+    height: auto;
+}
+
+.no-exists h3 {
+    background: linear-gradient(90deg, rgb(27, 92, 117), rgb(97, 31, 110));
+    padding: 10px;
+    font-size: 1.9rem;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 550px;
+    height: 85px;
+    border-radius: 5px; 
 }

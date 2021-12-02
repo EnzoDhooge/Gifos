@@ -1,0 +1,20 @@
+<main class="main">
+
+    <div class="banner-main">
+        <p>Results found with "{{categoria}}" ...</p>
+        
+        <div class="elements-items">
+            {{#each gif}}
+                <a href="/more/{{id}}"><img src={{url}} alt="gif"></a>
+            {{else}}
+        </div>
+        
+    </div>
+
+    <div class="no-exists">
+        <img src="/img/no-exists.png" alt="logo de error">
+        <h3>No results for your search. Check if you have spelled correctly.</h3>
+    </div>
+    {{/each}}
+
+</main>

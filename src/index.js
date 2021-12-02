@@ -37,6 +37,7 @@ app.use(require('./routes/home'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
 // Stariting the server
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'));

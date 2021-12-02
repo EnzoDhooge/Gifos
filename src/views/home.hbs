@@ -1,12 +1,14 @@
 <main class="main">
+    
     <div class="banner-main">
-        <p>Trends right now ...</p>
+        <p>TRENDS right now ...</p>
         
-        <div class="elements-items">
-            {{#each tend}}
-            <img src={{this}} alt="gif">
+        <div class="elements-items"> 
+            {{#each gif}}
+                <a href="/more/{{id}}"><img src={{url}} alt="gif"></a>
             {{/each}}
         </div>
         
     </div>
+
 </main>
